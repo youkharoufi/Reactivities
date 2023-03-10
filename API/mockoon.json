@@ -1,0 +1,171 @@
+{
+  "uuid": "e9727594-ed96-4b7a-9b73-28773578f7e5",
+  "lastMigration": 24,
+  "name": "Mockoon",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 5001,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "34da1487-993c-4d11-98b2-f58dba04fdb1",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/technics",
+      "responses": [
+        {
+          "uuid": "10e54fad-648a-4a34-a460-9b6934479747",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "FILE",
+          "filePath": "C:\\Users\\KharoufiY\\React.js\\training\\src\\data\\sampleDataMockoon.json",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "0e7e2ce1-6f67-4413-92e6-5a054adc78ee",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "api/technics/*",
+      "responses": [
+        {
+          "uuid": "dd2d03eb-913d-4464-8283-960ae9d5bd3b",
+          "body": "{{body}}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "",
+              "value": "",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "88badcb4-4db6-4243-b6d8-dafb5fe356b7",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "api/technics/*",
+      "responses": [
+        {
+          "uuid": "8e4abae1-7e31-4b86-b5e0-437b3cec7bf4",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "92bb5906-08f3-4b13-8cfa-5d95a104385c",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "api/technics",
+      "responses": [
+        {
+          "uuid": "99b73d34-1b36-460a-8dd5-bb412583c56e",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "proxyMode": true,
+  "proxyHost": "http://localhost:3001",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}

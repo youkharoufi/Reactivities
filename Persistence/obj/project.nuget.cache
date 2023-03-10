@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "yUbhtmMzLOucj02BCVt8fAL7FQV2qhy4Qsg1zmXKfG0IS6CL5AlLqNNwI6jof9Gids2iaJ06xtyWq0jeEN3H7w==",
+  "dgSpecHash": "aig6KSg3NLdsXpAAAmimrZiwqoDaIMJhutjNjPLklwCMVUS8eWddmIPFVDO+a1fIurn97mgxatuTK7eeFRWZ9w==",
   "success": true,
   "projectFilePath": "C:\\Users\\KharoufiY\\React.js\\Reactivities\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KharoufiY\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\KharoufiY\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\KharoufiY\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\KharoufiY\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\KharoufiY\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\KharoufiY\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\KharoufiY\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\KharoufiY\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\KharoufiY\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",
