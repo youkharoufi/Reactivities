@@ -5,10 +5,11 @@ import { Activity } from '../../../app/models/Activity';
 interface Props {
     activity: Activity | undefined;
     closeForm: () => void,
-    createOrEdit:(activity:Activity)=>void
+    createOrEdit: (activity: Activity) => void
+    submitting:boolean
 }
 
-export default function ActivityForm({activity, closeForm }:Props) {
+export default function ActivityForm({ activity, closeForm, submitting, createOrEdit }: Props) {
 
     const initialState = activity ? activity :
 
@@ -19,13 +20,13 @@ export default function ActivityForm({activity, closeForm }:Props) {
             category: '',
             date: '',
             city: '',
-            venur: ''
+            venue: ''
         };
 
     const [values, setValues] = useState(initialState);
 
     function handleSubmit() {
-        console.log(values);
+        createOrEdit(values);
     }
 
     function handleInputChange(event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
@@ -44,7 +45,7 @@ export default function ActivityForm({activity, closeForm }:Props) {
                 <Form.Input placeholder='City' value={values.title} name="city" onChange={handleInputChange} />
                 <Form.Input placeholder='Venue' value={values.title} name="venue" onChange={handleInputChange} />
 
-                <Button floated='right' positive type='submit' content='Submit' />
+                <Button loading={submitting} floated='right' positive type='submit' content='Submit' />
                 <Button onClick={closeForm} floated='right' type='button' content='Cancel' />
 
             </Form>

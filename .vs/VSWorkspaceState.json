@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\API",
+    "\\API\\Controllers",
     "\\API\\Properties",
-    "\\Application"
+    "\\Application",
+    "\\Domain"
   ],
   "SelectedNode": "\\Reactivities.sln",
   "PreviewInSolutionExplorer": false
